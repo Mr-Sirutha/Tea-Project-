@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> FeedBack Form</title>
+        <link rel="stylesheet" href="feedback.css">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    </head>
+    <body>
+        <div class="container">
+            <form onsubmit="sendmail(); reset(); return false">
+                <h3>If Any Queries</h3>
+                <input type="text" name="" id="name" placeholder="Your Name" required>
+                <input type="email" name="" id="email" placeholder="Email" required>
+                <input type="text" name="" id="phone" placeholder="Phone Number" required>
+                <textarea name="" id="message" cols="30" rows="7" placeholder="Tell To Us!"></textarea>
+                <button type="submit">Send</button>
+            </form>
+
+        </div>
+        <script src="https://smtpjs.com/v3/smtp.js"></script>
+        <script>
+            function sendmail(){
+                Email.send({
+    Host : "smtp.gmail.com",
+    Username : "hellgodpubg007@gmail.com",
+    Password : "iqwxyisrcfqxtfbi",
+    To : 'hellgodpubg007@gmail.com',
+    From : document.getElementById("email").value,
+    Subject : "FeedBacks...!",
+    Body : "Name:"+document.getElementById("name").value
+    +"<br> Email:"+document.getElementById("email").value
+    +"<br> Phone No:"+document.getElementById("phone").value
+    +"<br> Content:"+document.getElementById("message").value
+}).then(
+  message => alert(" Sent Successfully...!")
+);
+
+            }
+
+        </script>
+    </body>
+</html>

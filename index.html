@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Tea Paradise</title>
+        <link rel="stylesheet" href="style.css">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    </head>
+    <body>
+        <section>
+            <video autoplay  muted loop class="vdo">
+                <source src="tvdo2.mp4" type="video/mp4">
+            </video>
+            <nav>
+                <img class="logo-img" src="logo.jpg" type="image/jpg">
+                <h1 class="header-txt">TEA PARADISE</h1>
+                <div id="menu">
+                    <ul>
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="menu-card.html">Menu-Cards</a></li>
+                        <li><a href="location.html">Location</a></li>
+                        <li><a href="membership.html">Memberships</a></li>
+                        <li><a href="feedback.html">FeedBacks</a></li>
+                    </ul>
+                 </div>
+                 <div  id="menu-btn">
+                     <img src="menu.png" type="image/png" id="btn-m"/>
+                </div>
+            </nav>
+            <h1 class="c-text">Chaii</h1>
+            <p class="c-para">Chip Goes To Dreams...!</p>
+            <script>
+                var menu=document.getElementById("menu");
+                var menubtn=document.getElementById("menu-btn");
+                var btn=document.getElementById("btn-m");
+
+                menu.style.right=="-250px";
+
+               menubtn.onclick= function(){
+                    if(menu.style.right=="-250px"){
+                        menu.style.right="0";
+                        menu.style.opacity="0.8"
+                        
+
+                    }else{
+                        menu.style.right="-250px";
+                    }
+
+                }
+            </script>
+        </section>
+        <section>
+            <div class="total">
+                <div class="left-content">
+                    <img id="master-img" src="master.jpg"/>
+                </div>
+                <div class="right-content">
+                    <div class="head">
+                        <h1>Expert:</h1>
+                        <p>I Am <span> Cai Xiang</span>. born during the Dazhongxiangfu.Tea has intrinsic aroma. But tribute tea manufacturers like to mix small amount of Dryobalanops aromatica camphor, supposedly to enhance the aroma. The local people of Jian'an never mix any incense into tea, afraid to robe the natural aroma of tea.
+                            In the eight year of the Tiansheng era (1030 CE) he obtained the degree of jinshi 
+                            ( lit. "advanced scholar"), a graduate who passed the triennial court exam. His highest rank was Secretariat Drafter of the Duanming Court (Duanmingdian Xueshi), in charge of written communication of the imperial government. During the Qingli era (1041–1048 CE).</p>
+                    </div>
+                    
+                    <p></p>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="laster">
+            <div class="laster_size">
+                <div class="r_content">
+                    <h3>The Website Is Designed For <span>Tea Paradise</span></h3>
+                </div>
+                <div class="l_content">
+                    <h3>@CopyRights Claimed By <span>HellGod</span></h3>
+                </div>
+            </div>
+            <h2 class="thx">Thank You For Visiting</h2>
+        </div>
+        </section>
+    </body>
+</html>
